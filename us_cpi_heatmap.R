@@ -3,24 +3,23 @@ library(lubridate)
 library(viridis)
 library(gridExtra)
 library(grid)
-library(RCurl)
 
 #pull in public data from BLS website
 raw_data <- 
   #Total nonfarm"
-  read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.1.AllItems', col_type = 'c') %>% 
+  read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.1.allitems', col_type = 'c') %>% 
   #"Total private",
-  full_join(read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.11.USFoodBeverage', col_type = 'c')) %>%
+  full_join(read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.11.USFoodBeverage',  col_type = 'c')) %>%
   #"Mining and logging",
-  full_join( read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.20.USCommoditiesServicesSpecial', col_type = 'c')) %>%
+  full_join( read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.20.USCommoditiesServicesSpecial',  col_type = 'c')) %>%
   #"Construction",
-  full_join( read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.14.USTransportation', col_type = 'c')) %>%
+  full_join( read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.14.USTransportation',   col_type = 'c')) %>%
   #"Manufacturing",
-  full_join( read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.12.USHousing', col_type = 'c') )%>%
+  full_join( read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.12.USHousing',  col_type = 'c') )%>%
   #Durable Goods",
-  full_join(  read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.0.Current', col_type = 'c')) %>%
+  full_join(  read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.0.Current',  col_type = 'c')) %>%
   #"Nondurable Goods",
-  full_join( read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.15.USMedical', col_type = 'c'))
+  full_join( read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.15.USMedical',  col_type = 'c'))
 
 #sector category codes
 code_mapping <- 
@@ -321,11 +320,26 @@ dev.off()
 
 
 #file used for weights and checks
-# download.file(url ="https://www.bls.gov/web/cpi/cpipress2.xlsx", "D:/Estelle/Rscripts/us_cpi/cpi.xlsx", mode = "wb")
-# 
-# raw_data <- 
-#   readxl::read_xlsx("cpi.xlsx", skip = 3)
-# 
-# #clean raw data
-# raw_data %>% 
+download.file(url ="https://www.bls.gov/web/cpi/cpipress2.xlsx", "D:/Rscripts/us_cpi/cpi.xlsx", mode = "wb")
+
+weights_raw_data <-
+  readxl::read_xlsx("cpi.xlsx", skip = 3, col_names = TRUE)
+
+#grabbing weights
+  weights_raw_data %>% 
+    select(`Expenditure category`, contains("Relative\nimportance"), `Indent Level`) %>% 
+    rename(series_name = `Expenditure category`,
+           weights = names(.[,2]),
+           categorical_level = `Indent Level`) %>% 
+    filter(!is.na(weights)) %>% 
+    right_join(cleaned_data_since_2021) %>% 
+    select(series_name,date, id,  weights, categorical_level, monthly_chg) %>% 
+    # filter(date == last(date)) %>% 
+    group_by(date) %>% 
+    mutate(contributions = weights*monthly_chg) %>% 
+    #grabbing contributions to headline inflation
+    # filter(id %in% headline_code_list) %>% 
+    filter( categorical_level >1) %>% 
+    ggplot() +
+    geom_bar(aes())
   
