@@ -315,31 +315,3 @@ for (i in seq(1, length(category_list), by = 3)) {
 
 dev.off()
 
-# to-do
-#contributions chart 
-
-
-#file used for weights and checks
-download.file(url ="https://www.bls.gov/web/cpi/cpipress2.xlsx", "D:/Rscripts/us_cpi/cpi.xlsx", mode = "wb")
-
-weights_raw_data <-
-  readxl::read_xlsx("cpi.xlsx", skip = 3, col_names = TRUE)
-
-#grabbing weights
-  weights_raw_data %>% 
-    select(`Expenditure category`, contains("Relative\nimportance"), `Indent Level`) %>% 
-    rename(series_name = `Expenditure category`,
-           weights = names(.[,2]),
-           categorical_level = `Indent Level`) %>% 
-    filter(!is.na(weights)) %>% 
-    right_join(cleaned_data_since_2021) %>% 
-    select(series_name,date, id,  weights, categorical_level, monthly_chg) %>% 
-    # filter(date == last(date)) %>% 
-    group_by(date) %>% 
-    mutate(contributions = weights*monthly_chg) %>% 
-    #grabbing contributions to headline inflation
-    # filter(id %in% headline_code_list) %>% 
-    filter( categorical_level >1) %>% 
-    ggplot() +
-    geom_bar(aes())
-  
