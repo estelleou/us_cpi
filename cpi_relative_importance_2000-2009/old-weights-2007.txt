@@ -1,0 +1,363 @@
+ Table 1 (2003-2004 Weights). Relative importance of components in the Consumer
+ Price Indexes:  U.S. city average, December 2007
+ (Percent of all items)
+                                                                                    
+                                                                                    
+                                                             U.S. city average      
+                    Item and group                                                  
+                                                                                    
+                                                            CPI-U          CPI-W    
+                                                                                                                                                                       
+                                                                                    
+                 Expenditure category                                               
+                                                                                    
+ All items............................................   100.000        100.000     
+                                                                                    
+  Food and beverages..................................    15.099         16.559     
+   Food...............................................    13.995         15.545     
+                                                                                    
+    Food at home......................................     8.012          9.357     
+     Cereals and bakery products......................     1.117          1.297     
+      Cereals and cereal products.....................      .359           .439     
+       Flour and prepared flour mixes.................      .048           .056     
+       Breakfast cereal...............................      .196           .234     
+       Rice, pasta, cornmeal..........................      .115           .149     
+      Bakery products.................................      .758           .858     
+       Bread..........................................      .234           .260     
+       Fresh biscuits, rolls, muffins.................      .104           .109     
+       Cakes, cupcakes, and cookies...................      .210           .249     
+       Other bakery products..........................      .211           .241     
+     Meats, poultry, fish, and eggs...................     2.138          2.654     
+      Meats, poultry, and fish........................     2.012          2.500     
+       Meats..........................................     1.295          1.643     
+        Beef and veal.................................      .634           .814     
+         Uncooked ground beef.........................      .235           .322     
+         Uncooked beef roasts.........................      .106           .129     
+         Uncooked beef steaks.........................      .242           .297     
+         Uncooked other beef and veal.................      .052           .066     
+        Pork..........................................      .403           .512     
+         Bacon, breakfast sausage, and related                                      
+             products.................................      .131           .167     
+         Ham..........................................      .092           .109     
+         Pork chops...................................      .078           .113     
+         Other pork including roasts and picnics......      .101           .123     
+        Other meats...................................      .257           .316     
+       Poultry........................................      .378           .479     
+        Chicken.......................................      .307           .398     
+        Other poultry including turkey................      .071           .081     
+       Fish and seafood...............................      .339           .378     
+        Fresh fish and seafood........................      .210           .234     
+        Processed fish and seafood....................      .129           .144     
+      Eggs............................................      .126           .154     
+     Dairy and related products.......................      .894          1.012     
+      Milk............................................      .336           .409     
+      Cheese and related products.....................      .274           .295     
+      Ice cream and related products..................      .141           .155     
+      Other dairy and related products................      .143           .153     
+     Fruits and vegetables............................     1.233          1.351     
+      Fresh fruits and vegetables.....................      .985          1.072     
+       Fresh fruits...................................      .502           .538     
+        Apples........................................      .088           .102     
+        Bananas.......................................      .074           .085     
+        Citrus fruits.................................      .091           .102     
+        Other fresh fruits............................      .249           .249     
+       Fresh vegetables...............................      .483           .534     
+        Potatoes......................................      .076           .091     
+        Lettuce.......................................      .062           .069     
+        Tomatoes......................................      .105           .125     
+        Other fresh vegetables........................      .240           .249     
+      Processed fruits and vegetables.................      .247           .279     
+       Canned fruits and vegetables...................      .129           .141     
+       Frozen fruits and vegetables...................      .076           .086     
+       Other processed fruits and vegetables including                              
+           dried......................................      .043           .052     
+     Nonalcoholic beverages and beverage materials....      .900          1.072     
+      Juices and nonalcoholic drinks..................      .599           .748     
+       Carbonated drinks..............................      .323           .427     
+       Frozen noncarbonated juices and drinks.........      .019           .022     
+       Nonfrozen noncarbonated juices and drinks......      .257           .300     
+      Beverage materials including coffee and tea.....      .302           .324     
+       Coffee.........................................      .101           .104     
+       Other beverage materials including tea.........      .201           .221     
+     Other food at home...............................     1.729          1.971     
+      Sugar and sweets................................      .301           .334     
+       Sugar and artificial sweeteners................      .054           .066     
+       Candy and chewing gum..........................      .195           .207     
+       Other sweets...................................      .052           .061     
+      Fats and oils...................................      .231           .287     
+       Butter and margarine...........................      .069           .082     
+       Salad dressing.................................      .062           .080     
+       Other fats and oils including peanut butter....      .100           .125     
+      Other foods.....................................     1.197          1.351     
+       Soups..........................................      .082           .088     
+       Frozen and freeze dried prepared foods.........      .246           .278     
+       Snacks.........................................      .269           .288     
+       Spices, seasonings, condiments, sauces.........      .214           .242     
+       Baby food......................................      .071           .100     
+       Other miscellaneous foods......................      .315           .354     
+                                                                                    
+    Food away from home...............................     5.983          6.188     
+     Full service meals and snacks....................     2.609          2.154     
+     Limited service meals and snacks.................     2.713          3.230     
+     Food at employee sites and schools...............      .254           .327     
+     Food from vending machines and mobile vendors....      .125           .199     
+     Other food away from home........................      .283           .278     
+    Alcoholic beverages...............................     1.104          1.013     
+     Alcoholic beverages at home......................      .703           .712     
+      Beer, ale, and other malt beverages at home.....      .333           .457     
+      Distilled spirits at home.......................      .119           .111     
+      Wine at home....................................      .251           .144     
+     Alcoholic beverages away from home...............      .401           .302     
+                                                                                    
+  Housing.............................................    42.240         39.961     
+   Shelter............................................    32.473         30.216     
+    Rent of primary residence.........................     5.924          7.993     
+    Lodging away from home............................     2.660          1.436     
+     Housing at school, excluding board...............      .156           .075     
+     Other lodging away from home including hotels and                              
+         motels.......................................     2.504          1.361     
+    Owners' equivalent rent of primary residence......    23.535         20.459     
+    Tenants' and household insurance..................      .354           .328     
+   Fuels and utilities................................     5.330          5.826     
+    Household energy..................................     4.422          4.879     
+     Fuel oil and other fuels.........................      .417           .426     
+      Fuel oil........................................      .295           .289     
+      Propane, kerosene, and firewood.................      .122           .137     
+     Gas (piped) and electricity......................     4.005          4.453     
+      Electricity.....................................     2.780          3.120     
+      Utility (piped) gas service.....................     1.225          1.333     
+     Water and sewer and trash collection services....      .908           .947     
+      Water and sewerage maintenance..................      .678           .719     
+      Garbage and trash collection....................      .230           .227     
+   Household furnishings and operations...............     4.437          3.920     
+    Window and floor coverings and other linens.......      .326           .260     
+     Floor coverings..................................      .049           .045     
+     Window coverings.................................      .091           .065     
+     Other linens.....................................      .187           .150     
+    Furniture and bedding.............................      .922           .804     
+     Bedroom furniture................................      .306           .276     
+     Living room, kitchen, and dining room furniture..      .431           .374     
+     Other furniture..................................      .179           .142     
+     Unsampled furniture..............................      .006           .012     
+    Appliances........................................      .325           .371     
+     Major appliances.................................      .190           .214     
+     Other appliances.................................      .129           .147     
+     Unsampled appliances.............................      .007           .010     
+    Other household equipment and furnishings.........      .536           .454     
+     Clocks, lamps, and decorator items...............      .276           .221     
+     Indoor plants and flowers........................      .098           .078     
+     Dishes and flatware..............................      .070           .064     
+     Nonelectric cookware and tableware...............      .090           .091     
+    Tools, hardware, outdoor equipment and supplies...      .719           .749     
+     Tools, hardware and supplies.....................      .196           .275     
+     Outdoor equipment and supplies...................      .347           .304     
+     Unsampled tools, hardware, outdoor equipment and                               
+         supplies.....................................      .176           .170     
+    Housekeeping supplies.............................      .832           .920     
+     Household cleaning products......................      .357           .442     
+     Household paper products.........................      .210           .229     
+     Miscellaneous household products.................      .264           .248     
+    Household operations..............................      .777           .361     
+     Domestic services................................      .246           .077     
+     Gardening and lawncare services..................      .252           .111     
+     Moving, storage, freight expense.................      .076           .049     
+     Repair of household items........................      .128           .080     
+     Unsampled household operations...................      .075           .044     
+                                                                                    
+  Apparel.............................................     3.569          3.856     
+   Men's and boys' apparel............................      .841           .910     
+    Men's apparel.....................................      .655           .663     
+     Men's suits, sport coats, and outerwear..........      .132           .117     
+     Men's furnishings................................      .162           .161     
+     Men's shirts and sweaters........................      .176           .165     
+     Men's pants and shorts...........................      .169           .202     
+     Unsampled men's apparel..........................      .016           .017     
+    Boys' apparel.....................................      .187           .247     
+   Women's and girls' apparel.........................     1.517          1.595     
+    Women's apparel...................................     1.288          1.315     
+     Women's outerwear................................      .103           .111     
+     Women's dresses..................................      .137           .209     
+     Women's suits and separates......................      .692           .669     
+     Women's underwear, nightwear, sportswear and                                   
+         accessories..................................      .331           .303     
+     Unsampled women's apparel........................      .025           .023     
+    Girls' apparel....................................      .229           .280     
+   Footwear...........................................      .715           .910     
+    Men's footwear....................................      .214           .293     
+    Boys' and girls' footwear.........................      .159           .230     
+    Women's footwear..................................      .342           .386     
+   Infants' and toddlers' apparel.....................      .170           .224     
+   Jewelry and watches................................      .325           .217     
+    Watches...........................................      .043           .042     
+    Jewelry...........................................      .282           .175     
+                                                                                    
+  Transportation......................................    17.948         20.365     
+   Private transportation.............................    16.856         19.628     
+    New and used motor vehicles.......................     7.280          8.267     
+     New vehicles.....................................     4.773          4.975     
+     Used cars and trucks.............................     1.658          2.578     
+     Leased cars and trucks...........................      .577           .521     
+     Car and truck rental.............................      .086           .053     
+     Unsampled new and used motor vehicles............      .187           .139     
+    Motor fuel........................................     5.411          6.758     
+     Gasoline (all types).............................     5.358          6.695     
+     Other motor fuels................................      .053           .063     
+    Motor vehicle parts and equipment.................      .369           .442     
+     Tires............................................      .216           .235     
+     Vehicle accessories other than tires.............      .153           .207     
+    Motor vehicle maintenance and repair..............     1.137          1.134     
+     Motor vehicle body work..........................      .085           .063     
+     Motor vehicle maintenance and servicing..........      .421           .417     
+     Motor vehicle repair.............................      .609           .626     
+     Unsampled service policies.......................      .022           .027     
+    Motor vehicle insurance...........................     2.184          2.580     
+    Motor vehicle fees................................      .475           .447     
+     State and local registration and license.........      .302           .311     
+     Parking and other fees...........................      .161           .132     
+     Unsampled motor vehicle fees.....................      .012           .004     
+   Public transportation..............................     1.092           .737     
+    Airline fare......................................      .689           .409     
+    Other intercity transportation....................      .158           .073     
+    Intracity transportation..........................      .242           .251     
+    Unsampled public transportation...................      .003           .004     
+                                                                                    
+  Medical care........................................     6.346          5.272     
+   Medical care commodities...........................     1.427          1.114     
+    Prescription drugs................................     1.011           .765     
+     Prescription drugs...............................      .999           .758     
+     Unsampled rent or repair of medical equipment....      .011           .007     
+    Nonprescription drugs and medical supplies........      .416           .348     
+     Internal and respiratory over-the-counter drugs..      .285           .257     
+     Nonprescription medical equipment and supplies...      .131           .091     
+   Medical care services..............................     4.919          4.158     
+    Professional services.............................     2.821          2.336     
+     Physicians' services.............................     1.617          1.399     
+     Dental services..................................      .733           .594     
+     Eyeglasses and eye care..........................      .219           .175     
+     Services by other medical professionals..........      .253           .168     
+    Hospital and related services.....................     1.693          1.426     
+     Hospital services................................     1.604          1.392     
+     Nursing homes and adult daycare..................      .089           .034     
+    Health insurance..................................      .404           .396     
+                                                                                    
+  Recreation..........................................     5.377          4.840     
+   Video and audio....................................     1.650          1.791     
+    Televisions.......................................      .097           .097     
+    Cable and satellite television and radio service..     1.128          1.240     
+    Other video equipment.............................      .033           .035     
+    Video cassettes, discs, and other media including                               
+        rental........................................      .167           .206     
+    Audio equipment...................................      .067           .063     
+    Audio discs, tapes and other media................      .086           .096     
+    Unsampled video and audio.........................      .072           .053     
+   Pets, pet products and services....................      .655           .646     
+    Pets and pet products.............................      .380           .420     
+    Pet services including veterinary.................      .275           .226     
+   Sporting goods.....................................      .642           .494     
+    Sports vehicles including bicycles................      .384           .253     
+    Sports equipment..................................      .249           .234     
+    Unsampled sporting goods..........................      .009           .006     
+   Photography........................................      .155           .137     
+    Photographic equipment and supplies...............      .071           .061     
+    Photographers and film processing.................      .083           .074     
+    Unsampled photography.............................      .002           .002     
+   Other recreational goods...........................      .347           .333     
+    Toys..............................................      .222           .243     
+    Sewing machines, fabric and supplies..............      .064           .047     
+    Music instruments and accessories.................      .046           .031     
+    Unsampled recreation commodities..................      .015           .012     
+   Recreation services................................     1.624          1.221     
+    Club membership dues and fees for participant                                   
+        sports........................................      .492           .302     
+    Admissions........................................      .695           .595     
+    Fees for lessons or instructions..................      .217           .138     
+    Unsampled recreation services.....................      .220           .185     
+   Recreational reading materials.....................      .304           .217     
+    Newspapers and magazines..........................      .179           .137     
+    Recreational books................................      .123           .080     
+    Unsampled recreational reading materials..........      .001           .000     
+                                                                                    
+  Education and communication.........................     5.971          5.511     
+   Education..........................................     3.121          2.350     
+    Educational books and supplies....................      .214           .217     
+    Tuition, other school fees, and childcare.........     2.908          2.134     
+     College tuition and fees.........................     1.554           .984     
+     Elementary and high school tuition and fees......      .414           .275     
+     Child care and nursery school....................      .734           .754     
+     Technical and business school tuition and fees...      .068           .033     
+     Unsampled tuition, other school fees, and                                      
+         childcare....................................      .139           .088     
+   Communication......................................     2.849          3.161     
+    Postage and delivery services.....................      .190           .152     
+     Postage..........................................      .174           .139     
+     Delivery services................................      .016           .012     
+    Information and information processing............     2.659          3.009     
+     Telephone services...............................     2.183          2.574     
+      Land-line telephone services, local charges.....      .746           .857     
+      Land-line telephone services, long distance                                   
+          charges.....................................      .680           .800     
+      Wireless telephone services.....................      .757           .918     
+    Information technology, hardware and services.....      .476           .434     
+     Personal computers and peripheral equipment......      .168           .148     
+     Computer software and accessories................      .033           .023     
+     Internet services and electronic information                                   
+         providers....................................      .223           .219     
+     Telephone hardware, calculators, and other                                     
+         consumer information items...................      .044           .036     
+     Unsampled information and information processing       .007           .008     
+                                                                                    
+  Other goods and services............................     3.451          3.636     
+   Tobacco and smoking products.......................      .735          1.173     
+    Cigarettes........................................      .686          1.108     
+    Tobacco products other than cigarettes............      .045           .061     
+    Unsampled tobacco and smoking products............      .004           .004     
+   Personal care......................................     2.716          2.463     
+    Personal care products............................      .677           .738     
+     Hair, dental, shaving, and miscellaneous personal                              
+         care products................................      .352           .404     
+     Cosmetics, perfume, bath, nail preparations and                                
+         implements...................................      .321           .329     
+     Unsampled personal care products.................      .004           .004     
+    Personal care services............................      .672           .613     
+     Haircuts and other personal care services........      .672           .613     
+    Miscellaneous personal services...................     1.181           .957     
+     Legal services...................................      .300           .255     
+     Funeral expenses.................................      .192           .125     
+     Laundry and dry cleaning services................      .282           .278     
+     Apparel services other than laundry and dry                                    
+         cleaning.....................................      .034           .025     
+     Financial services...............................      .186           .147     
+     Care of invalids and elderly at home.............      .105           .005     
+     Unsampled items..................................      .082           .121     
+    Miscellaneous personal goods......................      .185           .156     
+                                                                                    
+               Special aggregate indexes                                            
+                                                                                    
+ All items............................................   100.000        100.000     
+  Commodities.........................................    40.725         44.767     
+   Commodities less food and beverages................    25.626         28.209     
+    Nondurables less food and beverages...............    15.051         16.798     
+     Nondurables less food, beverages, and apparel....    11.483         12.942     
+    Durables..........................................    10.575         11.410     
+  Services............................................    59.275         55.233     
+  Rent of shelter.....................................    32.119         29.888     
+  Transportation services.............................     5.550          5.472     
+  Other services......................................    10.643          9.626     
+  All items less food.................................    86.005         84.455     
+  All items less shelter..............................    67.527         69.784     
+  All items less medical care.........................    93.654         94.728     
+  Commodities less food...............................    26.730         29.222     
+  Nondurables less food...............................    16.155         17.812     
+  Nondurables less food and apparel...................    12.587         13.956     
+  Nondurables.........................................    30.150         33.357     
+  Apparel less footwear...............................     2.853          2.946     
+  Services less rent of shelter.......................    27.156         25.344     
+  Services less medical care services.................    54.356         51.074     
+  Energy..............................................     9.833         11.637     
+  All items less energy...............................    90.167         88.363     
+   All items less food and energy.....................    76.172         72.818     
+    Commodities less food and energy commodities......    20.902         22.038     
+     Energy commodities...............................     5.828          7.184     
+    Services less energy services.....................    55.270         50.780     
+  Domestically produced farm food.....................     6.699          7.821     
+  Utilities and public transportation.................     9.316          9.951     	
