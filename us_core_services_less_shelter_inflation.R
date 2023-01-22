@@ -119,6 +119,7 @@ ggsave("us_core_services_less_shelter_inflation.png")
 
 #following the sanity check, realized the weights change every month, not just
 #year so need to go back and adjust that, but we're close
+#should find out how often these weights actuall change
 
   
 

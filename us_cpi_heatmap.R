@@ -6,19 +6,19 @@ library(grid)
 
 #pull in public data from BLS website
 raw_data <- 
-  #Total nonfarm"
+  #all items
   read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.1.allitems', col_type = 'c') %>% 
-  #"Total private",
+  #"us food and beverages",
   full_join(read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.11.USFoodBeverage',  col_type = 'c')) %>%
-  #"Mining and logging",
+  #us commodities services special aggregate,
   full_join( read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.20.USCommoditiesServicesSpecial',  col_type = 'c')) %>%
-  #"Construction",
+  #"us transportation",
   full_join( read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.14.USTransportation',   col_type = 'c')) %>%
-  #"Manufacturing",
+  #"us housing,
   full_join( read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.12.USHousing',  col_type = 'c') )%>%
-  #Durable Goods",
+  #more items that were dropped",
   full_join(  read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.0.Current',  col_type = 'c')) %>%
-  #"Nondurable Goods",
+  #"us medical",
   full_join( read_delim('https://download.bls.gov/pub/time.series/cu/cu.data.15.USMedical',  col_type = 'c'))
 
 #sector category codes
