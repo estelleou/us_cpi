@@ -27,6 +27,7 @@ raw_time_series<-
 #sector category codes
 services_code_mapping <- 
   tribble(~id, ~items,
+  "CUSR0000SA0", "all items",
   "CUSR0000SASLE",	"services less energy services",
   "CUSR0000SAH1","shelter",
   "CUSR0000SEHC", "owners' equivalent rent of residences",
@@ -70,14 +71,43 @@ cleaned_core_services_cpi_data<-
   ungroup()
 
 #merging the two datasets together
-core_services_cpi_and_weights_full_dataset <- 
+core_services_cpi_and_weights_merged_dataset <- 
   cleaned_core_services_cpi_data %>% 
   #creating year variables so that it can be merged with the weights dataset
   mutate(year = year(date)) %>% 
   #merging relative weights data from clean_historical_cpi_relative_importance.R
   full_join(cleaned_cpi_relative_importance_historical_data) %>% 
   #don't need these two variables anymore for merging with the weights dataset
-  select(-indent_level)
+  select(-indent_level) 
+  
+# create pseudo datasets of all items' updated weights for every month in order to 
+  #normalize with monthly updated weights for other items
+  #manually add on dec_weights for all items as 100
+all_items_monthly_weights_for_normalizing <- 
+  core_services_cpi_and_weights_merged_dataset %>% 
+  filter(items == "all items") %>% 
+  mutate(dec_weight = ifelse(items == "all items", 100, dec_weight)) %>% 
+  #create a month variable for easy sorting 
+  mutate(month = month(date)) %>% 
+  #calculate weights for every month of the year because BLS only publishes weights
+  #for december :https://www.bls.gov/cpi/tables/relative-importance/home.htm#Weights
+  mutate(all_items_monthly_weight = ifelse(month != 12, (value/lag(value))*100, dec_weight)) %>% 
+  select(date, all_items_monthly_weight)
+
+#calcualte updated monthly weights for each item
+core_services_cpi_and_weights_full_dataset <-
+  core_services_cpi_and_weights_merged_dataset %>% 
+  filter(items != "all items") %>% 
+  #calculate weights for every month of the year because BLS only publishes weights
+  #for december :https://www.bls.gov/cpi/tables/relative-importance/home.htm#Weights
+  group_by(items) %>% 
+  #create a month variable for easy sorting 
+  mutate(month = month(date)) %>% 
+  mutate(monthly_weight = ifelse(month != 12, (value/lag(value))*lag(dec_weight), dec_weight)) %>% 
+  ungroup() %>% 
+  left_join(all_items_monthly_weights_for_normalizing) %>% 
+  # normalize each item's monthly weight by all items 
+  mutate(monthly_weight = ifelse(month !=12, (monthly_weight/all_items_monthly_weight)*100, monthly_weight))
 
 
 #creating time-series of core services inflation less shelter data--------------
@@ -85,14 +115,14 @@ core_services_less_shelter_categories <-
   c("education and communication services", "water and sewer and trash collection services",
     "recreation services", "transportation services")
 
-core_services_less_shelter_cpi_data <- 
+core_services_less_shelter_cpi_data <-
  core_services_cpi_and_weights_full_dataset %>% 
-  filter(date > as.Date("2010-01-01")) %>% 
+  filter(date > as.Date("2009-12-01")) %>% 
   filter(items %in% core_services_less_shelter_categories) %>% 
   # calculate weights by year
   group_by(date) %>% 
-  mutate(denominator = sum(weight_c),
-         core_services_weights = weight_c/denominator,
+  mutate(denominator = sum(monthly_weight),
+         core_services_weights = monthly_weight/denominator,
          adjusted_contribution = monthly_chg*core_services_weights) %>% 
   summarize(core_services_less_shelter_inflation = sum(adjusted_contribution)) %>% 
    ungroup()
@@ -111,15 +141,15 @@ core_services_less_shelter_cpi_data <-
                date_label = "%Y",
                date_breaks = "1 year") +
   #my own personal theme setup
-  estelle_theme() +
+  # estelle_theme() +
   theme(plot.caption= element_text(hjust = 0,
                                    margin = margin(-10,0,0,0)))
 
 ggsave("us_core_services_less_shelter_inflation.png")
 
-#following the sanity check, realized the weights change every month, not just
-#year so need to go back and adjust that, but we're close
-#should find out how often these weights actuall change
+#following the sanity check
+
+
 
   
 

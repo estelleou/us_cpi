@@ -14,8 +14,8 @@ cleaned_cpi_relative_importance_and_indent_data  <-
   select(`...1`, `...2`, `...3`) %>% 
   rename(indent_level = `...1`,
          items= `...2`,
-         weight_c = `...3`) %>% 
-  mutate(weight_c = as.double(weight_c)) %>% 
+         dec_weight = `...3`) %>% 
+  mutate(dec_weight = as.double(dec_weight)) %>% 
   #generating year so that dataset can be merged with other years
   mutate(date = as.Date("2022", "%Y"),
          year = year(date)) %>% 
@@ -39,16 +39,16 @@ for (i in seq(2000,2009, by = 1) ){
   
 cleaned_file <-
   raw_data %>% 
-  separate(names(raw_data), into = c("items", "weight_c", "weight_w"), sep = "    ") %>%
+  separate(names(raw_data), into = c("items", "dec_weight", "weight_w"), sep = "    ") %>%
   select(-weight_w) %>% 
-  mutate(weight_c = as.double(weight_c)) %>% 
+  mutate(dec_weight = as.double(dec_weight)) %>% 
   mutate(items = gsub("\\.+$", "", items)) %>% 
   mutate(items = gsub("\\(\\d+\\)", "", items),
          items = gsub("\\d+", "", items)) %>% 
   mutate(items = str_trim(items)) %>% 
   #remove the first row that shows "All items with a weight of 100" 
   #because don't need it and formatting is weird
-  filter(!is.na(weight_c)) %>% 
+  filter(!is.na(dec_weight)) %>% 
   #slapping on the date for the dataset for merging later on
   mutate(date = as.Date(as.character(i), "%Y"),
          year = year(date)) %>% 
@@ -71,16 +71,16 @@ for (i in seq(2010,2019, by = 1) ){
   
   cleaned_file <-
     raw_data %>% 
-    separate(names(raw_data), into = c("items", "weight_c", "weight_w"), sep = "    ") %>%
+    separate(names(raw_data), into = c("items", "dec_weight", "weight_w"), sep = "    ") %>%
     select(-weight_w) %>% 
-    mutate(weight_c = as.double(weight_c)) %>% 
+    mutate(dec_weight = as.double(dec_weight)) %>% 
     mutate(items = gsub("\\.+$", "", items)) %>% 
     mutate(items = gsub("\\(\\d+\\)", "", items),
            items = gsub("\\d+", "", items)) %>% 
     mutate(items = str_trim(items)) %>% 
     #remove the first row that shows "All items with a weight of 100" 
     #because don't need it and formatting is weird
-    filter(!is.na(weight_c)) %>% 
+    filter(!is.na(dec_weight)) %>% 
     #slapping on the date for the dataset for merging later on
     mutate(date = as.Date(as.character(i), "%Y"),
            year = year(date)) %>% 
@@ -94,8 +94,8 @@ for (i in seq(2010,2019, by = 1) ){
 cleaned_cpi_relative_importance_2020 <- 
   readxl::read_xlsx("cpi_relative_importance_2020.xlsx", skip = 8) %>% 
   rename(items = `All items`,
-       weight_c = `100...3`) %>% 
-  select(items, weight_c) %>% 
+       dec_weight = `100...3`) %>% 
+  select(items, dec_weight) %>% 
   filter(!is.na(items)) %>% 
   #slapping on the date for the dataset for merging later on
   mutate(date = as.Date("2020", "%Y"),
@@ -105,8 +105,8 @@ cleaned_cpi_relative_importance_2020 <-
 cleaned_cpi_relative_importance_2021 <- 
   readxl::read_xlsx("cpi_relative_importance_2021.xlsx", skip = 8) %>% 
   rename(items = `All items`,
-         weight_c = `100...3`) %>% 
-  select(items, weight_c) %>% 
+         dec_weight = `100...3`) %>% 
+  select(items, dec_weight) %>% 
   filter(!is.na(items)) %>% 
   #slapping on the date for the dataset for merging later on
   mutate(date = as.Date("2021", "%Y"),
