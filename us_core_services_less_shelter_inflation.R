@@ -141,13 +141,13 @@ core_services_less_shelter_cpi_data <-
                date_label = "%Y",
                date_breaks = "1 year") +
   #my own personal theme setup
-  # estelle_theme() +
+  estelle_theme() +
   theme(plot.caption= element_text(hjust = 0,
                                    margin = margin(-10,0,0,0)))
 
 ggsave("us_core_services_less_shelter_inflation.png")
 
-#following the sanity check
+#calculations for monthly weights still off based on https://www.bls.gov/cpi/tables/relative-importance/home.htm#Weights
 
 
 
